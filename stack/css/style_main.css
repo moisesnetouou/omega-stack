@@ -1,0 +1,572 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/*HTML e Body*/
+html{
+    font-size: 60%;
+}
+
+html, body{
+    height: 100vh;
+    font-family: "Source Sans Pro";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/*Header <div class="flex-container-main">
+                <a href="stack/pacotes.html" class="button">Pacotes Pagos</a>
+        </div>*/
+header{
+    background-color: #4A27D6;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+
+.borda1{
+  box-shadow: 0 1px 10px 5px #4A27D6;
+}
+
+.borda2{
+  box-shadow: 0 1px 10px 5px #4A27D6;
+}
+header img{
+    width: 150px;
+    margin-left: 20px;
+    padding: 0px 0;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover:not(.active){
+    background-color:rgb(52, 30, 143);
+    text-decoration:  underline;
+    border-radius: 5px;
+}
+
+header nav ul li a.active{
+    text-decoration:  underline;
+    border-radius: 5px;
+}
+/*Padrão de texto*/
+
+h1{
+   font-size: 3.4rem;
+   line-height: 3.2rem; 
+   text-align: center;
+   margin-bottom: 1.2%;
+}
+
+h2{
+  font-size: 2rem;
+  line-height: 1rem; 
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+section.alpha{
+  }
+
+section.alpha .container{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+}
+
+section.alpha p{
+    color: black;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+/*Texto geral*/
+section.delta{
+    margin: 0 0;
+    background-color: white;
+}
+
+section.delta .container{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+}
+
+section.delta p{
+    color: black;
+    font-size: 1.8rem;
+    line-height: 1rem;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/*Botões*/
+.button {
+    display: inline;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color:#4A27D6;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 150ms linear 0s;
+}
+
+.button:hover{
+    background-color: rgb(33, 16, 102);
+}
+
+.btn-color1{
+  background-color: rgb(62, 234, 94);
+}
+.btn-color1:hover{
+  background-color: rgb(43, 179, 1);
+}
+
+
+.btn-color2{
+  background-color: rgb(187, 0, 171) ;
+}
+.btn-color2:hover{
+  background-color: rgba(211, 0, 98, 0.897);
+}
+
+
+  .flex-container-main{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: auto;
+    padding: 6px;
+    margin: 1.2% 0;
+  }
+
+
+  .bol{
+    list-style-type: disc;
+  }
+
+  .tribunais{
+    margin-left: 20%;
+}
+  
+
+
+  footer{
+    display: block;
+    background-color:rgb(85, 43, 250);
+    }
+
+
+footer div{
+    display: block;
+    
+}
+
+footer .content{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1010px;
+    line-height: 1;
+    font-size: 1.5rem;
+    color:black;
+    margin: 0px auto;
+    padding: 0px 10px;
+    margin-top: 3%;
+    
+}
+footer .content b{
+    margin:;
+}
+footer ul{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+footer li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    
+}
+
+ footer li img{
+     margin:0;
+    width: 40px;
+    padding: 15px 0;
+ }
+
+ footer li img.email{
+    margin:0;
+    margin-top: 3px;
+    width: 20px;
+    padding: 15px 0;
+
+ }
+
+ footer li img.insta{
+    margin-left: 5px;
+    margin-top: 4px;
+    width: 20px;
+    padding: 15px 0;
+
+ }
+
+ footer li img.wpp{
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 25px;
+    padding: 15px 0;
+
+ }
+
+
+ /*medias*/
+ @media (max-width: 2560px){
+    html {
+      font-size: 90%;
+    }
+  
+  }
+
+  @media (max-width: 1995px){
+    html {
+      font-size: 87.0%;
+    }
+  @media (max-width: 1977px){
+    html {
+      font-size: 87%;
+    }
+  }
+
+  @media (max-width: 1995px){
+    html {
+      font-size: 87.0%;
+    }
+
+  }
+
+ @media (max-width: 1440px){
+    html {
+      font-size: 81.0%;
+    }
+  
+  }
+
+
+  @media (max-width: 1366px){
+    html {
+      font-size: 78.8%;
+    }
+  section.alpha p{
+      margin: 0 60px;
+  }
+}
+
+@media (max-width: 1024px){
+    html {
+      font-size: 70%;
+    }
+    section.alpha p{
+      margin: 0 60px;
+     }
+    footer .content{
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 768px){
+  html {
+    font-size: 50%;
+  }
+  
+}
+
+@media (max-width: 686px){
+    html {
+      font-size: 70%;
+    }
+    section.alpha p{
+      margin: 0 60px;
+     }
+    footer .content{
+        margin-top: 16.7%;
+        display: block;
+        align-content: center;
+        align-items: center;
+    }
+    footer .content b{
+        margin: 0px 36%;
+    }
+}
+
+@media (max-width: 550px){
+    html {
+      font-size: 70%;
+    }
+    section.alpha p{
+      margin: 0 60px;
+     }
+
+     h1{
+        font-size: 3.4rem;
+        line-height: 4rem; 
+        margin: 0 20px; 
+     }
+     section.alpha p{
+        color: black;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 10px 16px;
+    }
+    footer .content{
+        margin-top: 2%;
+        display: block;
+        align-content: center;
+        align-items: center;
+        line-height: 2;
+        
+        
+        
+    }
+    footer .content b{
+        margin: 0px 36%;
+        
+    }
+    footer ul{
+        display: block;
+        text-align: center ; 
+    }
+    footer li img.email{
+        padding: 0px 0px;
+        margin: 0px;
+    }
+    footer li img.insta{
+        margin: 0px;
+        padding: 3px 0;
+    }
+    footer li img.wpp{
+        margin: 0px;
+        padding: 3px 0;
+    }
+    footer li{
+        display: block;
+        center
+        
+    }
+    
+header nav{
+        display: none;
+      }
+    
+      .one,
+      .two,
+      .three{
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+      }
+    
+      .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+      }
+      
+      .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #4A27D6;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .menu-section.on nav{ /*aparece novamente o nav*/
+        display: block;
+      }
+    /*daqui para baixo cria o X para fechar a nav*/
+      .menu-section.on .menu-toggle{ /*posição do /// votla para o canto*/
+        position: absolute;
+        right: 25px;
+        top: 15px;
+      }
+    
+      .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+      }
+    
+      .menu-section.on .menu-toggle .two{
+        opacity: 0;
+      }
+    
+      .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+      }
+    
+      .menu-section.on nav ul{
+        text-align: center;
+        display: block;
+      }
+    
+      .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+      }
+    }
+}
+
+@media (max-width: 510px){
+    html {
+      font-size: 78.8%;
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 3rem; 
+        margin: 0 10px; 
+     }
+     section.alpha p{
+        color: black;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin: 10px 14px;
+    }
+    footer .content b{
+        margin: 0px 32.5%;
+    }
+    .flex-container-main{
+        margin-top:0%;
+    }
+    section.delta p{
+        font-size: 1.4rem;
+        line-height: 1rem;
+        margin: 10px 0px;
+    }
+    .bol{
+      margin-left: 5%;
+  }
+  .tribunais{
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 510px){
+    html {
+      font-size: 78.8%;
+    }
+    footer .content b{
+        margin: 0px 30%;
+    }
+    
+    
+}
+
+
+@media (max-width: 406px){
+    html {
+      font-size: 65%;
+    }   
+}
+
+@media (max-width: 339px){
+  footer .content b{
+    margin: 0px 28%;
+}
+}
+
+@media (max-width: 320px){
+    html {
+      font-size: 60%;
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 3rem; 
+        margin: 0 10px; 
+     }
+     section.alpha p{
+        color: black;
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+        margin: 10px 6px;
+    }
+    footer .content b{
+        margin: 0px 28%;
+    }
+    .flex-container-main{
+        margin-top:0%;
+    }
+    section.delta p{
+        font-size: 1.4rem;
+        line-height: 1rem;
+        margin: 10px 0px;
+    }
+    
+}
+
+@media (max-width: 296px){
+  footer .content b{
+    margin: 0px 22%;
+}
+}
+
+@media (max-width: 296px){
+  
+}
+
